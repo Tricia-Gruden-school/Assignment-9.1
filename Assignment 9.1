@@ -1,0 +1,42 @@
+print("Welcome!!")
+
+directory = input("Please enter directory path:")
+print("")
+file_name = input("Please enter File name:")
+print("")
+user_name = input("Enter Name: ")
+print("")
+user_phone = input("Enter Phone Number: ")
+print("")
+user_address = input("Enter Address: ")
+
+
+import os 
+
+if file_name in directory:
+  with open ('file_name', 'w') as file_object: 
+   file_object.write ('{user_name}')
+   file_object.write ('{user_phone}')
+   file_object.write ('user_address')
+   print("Your information will be added to the directory")
+   print (f'{user_name}')
+   print (f'{user_phone}')
+   print (f'{user_address}')
+   print (" ")
+   print(f'{file_name}')
+   ("Your information will be added to the directory")
+
+
+else: #if the file doesn't exisit create a file run guest_name and add it to the new file 
+  with open('file_name.txt','w') as file_object:                 
+   file_object.write ('{user_name}')
+   file_object.write ('{user_phone}')
+   file_object.write ('user_address')
+   print("Your information will be added to the directory")
+   print (f'{user_name}')
+   print (f'{user_phone}')
+   print (f'{user_address}')
+   print (" ")
+   print(file_name.txt)
+   ("Your information will be added to the directory")
+   
